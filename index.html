@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  	<title>Crazy Wallpapers</title>
+  	<meta name="Resource-type" content="Document" />
+
+  	<link rel="stylesheet" type="text/css" href="main.css" />
+  	<link rel="stylesheet" type="text/css" href="common.css" />
+
+  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+  	<script type="text/javascript" src="fullPage/vendors/scrolloverflow.js"></script>
+
+  	<script type="text/javascript" src="fullPage/jquery.fullPage.js"></script>
+
+  	<script type="text/javascript">
+  		$(document).ready(function() {
+  			$('#fullpage').fullpage({
+          continuousVertical: true,
+          navigation: true,
+  			});
+  		});
+  	</script>
+
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+    <style type="text/css">
+      .imp img {
+        position: relative;
+      }
+      .fry {
+        z-index: 1;
+        /*bottom: 600px;*/
+      }
+
+      #section0{
+        background: -webkit-gradient(linear, top left, bottom left, from(lawngreen), to(#4BBFC3));
+        background: -webkit-linear-gradient(lawngreen, #4BBFC3);
+        background: linear-gradient(lawngreen,#4BBFC3);
+      }
+
+      #section1{
+        background: -webkit-gradient(linear, top left, bottom left, from(#4BBFC3), to(#7BAABE));
+        background: -webkit-linear-gradient(#4BBFC3, #7BAABE);
+        background: linear-gradient(#4BBFC3,#7BAABE);
+      }
+
+      #section2{
+        background: -webkit-gradient(linear, top left, bottom left, from(#7BAABE), to(#bbbbbb));
+        background: -webkit-linear-gradient(#7BAABE, #bbbbbb);
+        background: linear-gradient(#7BAABE,#bbbbbb);
+      }
+
+      #section3{
+        background: -webkit-gradient(linear, top left, bottom left, from(#bbbbbb), to(plum));
+        background: -webkit-linear-gradient(#bbbbbb, plum);
+        background: linear-gradient(#bbbbbb,plum);
+      }
+
+      #section4{
+        background: -webkit-gradient(linear, top left, bottom left, from(plum), to(lawngreen));
+        background: -webkit-linear-gradient(plum, lawngreen);
+        background: linear-gradient(plum,lawngreen);
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <div id="fullpage">
+    	<div class="section" id="section0"><h1>Crazy Wallpapers</h1></div>
+    	<div class="section" id="section1">
+    	    <div class="slide active">
+            <h1>Вам надоели обычные обои?</h1>
+            <img src="img/first.jpg">
+          </div>
+    	    <div class="slide">
+            <h1>Боитесь получить подобное?</h1>
+            <img src="img/second.jpg">
+          </div>
+    	    <div class="slide">
+            <h1>Уже неплохо, если у вас есть что-то вроде этого:</h1>
+            <img src="img/third.jpg">
+          </div>
+    	</div>
+    	<div class="section active" id="section2">
+        <h1>Вам не подходят эти варианты?</h1>
+        <table>
+          <tr>
+            <td>
+              <h3>Чувствуете, как паника подступает к горлу? Ну что вы, спокойнее. Хотите выделиться уникальным дизайном с персонажами ваших любимых произведений?</h3>
+            </td>
+            <td class="imp">
+              <img src="img/panic1.jpg.png" class="fry">
+            </td>
+          </tr>
+        </table>
+
+      </div>
+    	<div class="section" id="section3">
+        <div class="slide">
+          <h1>Закажите ваши фотообои <br>у нас - мы вас не подведем</h1>
+        </div>
+        <div class="slide">
+          <h1>Мы предоставим вам уникальный каталог</h1>
+          <figure>
+            <img src="img/catalog.jpg">
+            <figcaption>*(Это - пример)</figcaption>
+          </figure>
+        </div>
+        <div class="slide">
+          <h1>Персонажи ваших любимых фильмов и аниме</h1>
+          <img src="img/anime.jpg">
+          <img src="img/sw.jpg">
+        </div>
+      </div>
+      <div class="section" id="section4">
+        <h1>По всем вопросам обращайтесь по адресу:</h1>
+        <h2>Россия, г. Саратов, ул. Политехническая, 77, к. 414</h2>
+      </div>
+    </div>
+
+  </body>
+</html>

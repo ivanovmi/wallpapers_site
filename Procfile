@@ -1,1 +1,1 @@
-web: python -m SimpleHTTPServer $PORT
+web: harp server --port $PORT

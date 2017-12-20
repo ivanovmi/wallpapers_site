@@ -4,22 +4,27 @@
   	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   	<title>Crazy Wallpapers</title>
   	<meta name="Resource-type" content="Document" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   	<link rel="stylesheet" type="text/css" href="main.css" />
   	<link rel="stylesheet" type="text/css" href="common.css" />
 
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
   	<script type="text/javascript" src="fullPage/vendors/scrolloverflow.js"></script>
 
   	<script type="text/javascript" src="fullPage/jquery.fullPage.js"></script>
-
   	<script type="text/javascript">
   		$(document).ready(function() {
   			$('#fullpage').fullpage({
-          continuousVertical: true,
+          //continuousVertical: true,
           navigation: true,
+          css3: false,
   			});
   		});
   	</script>
@@ -27,8 +32,14 @@
     <link rel="stylesheet" href="css/font-awesome.css">
 
     <style type="text/css">
+      img {
+        border-radius: 10px;
+      }
+
       .imp img {
         position: relative;
+        -webkit-filter: drop-shadow(0 0 3px rgba(100,0,0,0.5));
+        filter: drop-shadow(0 0 3px rgba(100,0,0,0.5));
       }
       .fry {
         z-index: 1;
@@ -36,53 +47,93 @@
       }
 
       #section0{
-        background: -webkit-gradient(linear, top left, bottom left, from(lawngreen), to(#4BBFC3));
-        background: -webkit-linear-gradient(lawngreen, #4BBFC3);
-        background: linear-gradient(lawngreen,#4BBFC3);
+        background: -webkit-gradient(linear, top left, bottom left, from(#674a38), to(#986a46));
+        background: -webkit-linear-gradient(#674a38, #986a46);
+        background: linear-gradient(#674a38,#986a46);
       }
 
       #section1{
-        background: -webkit-gradient(linear, top left, bottom left, from(#4BBFC3), to(#7BAABE));
-        background: -webkit-linear-gradient(#4BBFC3, #7BAABE);
-        background: linear-gradient(#4BBFC3,#7BAABE);
+        background: -webkit-gradient(linear, top left, bottom left, from(#986a46), to(#d4ad86));
+        background: -webkit-linear-gradient(#986a46, #d4ad86);
+        background: linear-gradient(#986a46,#d4ad86);
       }
 
       #section2{
-        background: -webkit-gradient(linear, top left, bottom left, from(#7BAABE), to(#bbbbbb));
-        background: -webkit-linear-gradient(#7BAABE, #bbbbbb);
-        background: linear-gradient(#7BAABE,#bbbbbb);
+        background: -webkit-gradient(linear, top left, bottom left, from(#d4ad86), to(#efefef));
+        background: -webkit-linear-gradient(#d4ad86, #efefef);
+        background: linear-gradient(#d4ad86,#efefef);
       }
 
       #section3{
-        background: -webkit-gradient(linear, top left, bottom left, from(#bbbbbb), to(plum));
-        background: -webkit-linear-gradient(#bbbbbb, plum);
-        background: linear-gradient(#bbbbbb,plum);
+        background-color: #efefef;
       }
 
       #section4{
-        background: -webkit-gradient(linear, top left, bottom left, from(plum), to(lawngreen));
-        background: -webkit-linear-gradient(plum, lawngreen);
-        background: linear-gradient(plum,lawngreen);
+        background: -webkit-gradient(linear, top left, bottom left, from(#efefef), to(#534940));
+        background: -webkit-linear-gradient(#efefef, #534940);
+        background: linear-gradient(#efefef, #534940);
       }
 
+      #section5{
+        background: -webkit-gradient(linear, top left, bottom left, from(#534940), to(#674a38));
+        background: -webkit-linear-gradient(#534940, #674a38);
+        background: linear-gradient(#534940, #674a38);
+      }
+
+      .right-branch {
+        position: relative;
+        transform: rotate(-90deg) scale(2,2);
+        opacity: 0.5;
+        filter: alpha(opacity=50); /* For IE8 and earlier */
+        left: 30%;
+        bottom: 300px;
+      }
+
+      .left-branch {
+        position: relative;
+        transform: rotate(90deg) scaleX(-1) scale(2,2);
+        opacity: 0.5;
+        filter: alpha(opacity=50); /* For IE8 and earlier */
+        right: 30%;
+        bottom: 300px;
+      }
+
+      @font-face {
+        font-family: Bradobrei;
+        src: url("Bradobrei.otf");
+      }
+
+      .scream-n-shout {
+        font-family: Bradobrei;
+        color: #452b21;
+        font-size: 8em
+      }
+
+      .dark {
+        color: #452b21;
+      }
     </style>
   </head>
 
   <body>
 
     <div id="fullpage">
-    	<div class="section active" id="section0"><h1>Crazy Wallpapers</h1></div>
+    	<div class="section active" id="section0"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1 class="scream-n-shout">Crazy <br> Wallpapers</h1>
+        <img src="img/branch.png" class="left-branch">
+        <img src="img/branch.png" class="right-branch">
+      </div>
     	<div class="section" id="section1">
     	    <div class="slide active">
-            <h1>Вам надоели обычные обои?</h1>
+            <h1>Вам надоели обычные обои?</h1><br><br>
             <img src="img/first.jpg">
           </div>
     	    <div class="slide">
-            <h1>Боитесь получить подобное?</h1>
+            <h1>Боитесь получить подобное?</h1><br><br>
             <img src="img/second.jpg">
           </div>
     	    <div class="slide">
-            <h1>Уже неплохо, если у вас есть что-то вроде этого:</h1>
+            <h1>Уже неплохо, если у вас есть что-то вроде этого:</h1><br><br>
             <img src="img/third.jpg">
           </div>
     	</div>
@@ -105,21 +156,60 @@
           <h1>Закажите ваши фотообои <br>у нас - мы вас не подведем</h1>
         </div>
         <div class="slide">
-          <h1>Мы предоставим вам уникальный каталог</h1>
+          <h1>Мы предоставим вам уникальный <a href="https://www.deviantart.com" target="_blank">каталог</a></h1><br><br>
           <figure>
             <img src="img/catalog.jpg">
             <figcaption>*(Это - пример)</figcaption>
           </figure>
         </div>
         <div class="slide">
-          <h1>Персонажи ваших любимых фильмов и аниме</h1>
+          <h1>Персонажи ваших любимых фильмов и аниме</h1><br><br>
           <img src="img/anime.jpg">
           <img src="img/sw.jpg">
         </div>
       </div>
       <div class="section" id="section4">
-        <h1>По всем вопросам обращайтесь по адресу:</h1>
-        <h2>Россия, г. Саратов, ул. Политехническая, 77, к. 414</h2>
+        <h2>И ваша мечта воплотится всего за 1100 руб. за м<sup>2</sup></h2>
+        <img src="img/shut-up.png" class="fry">
+      </div>
+      <div class="section" id="section5">
+        <h1 class="dark">Вы можете совершить заказ здесь:</h1>
+        <h2 class="dark">Россия, г. Саратов, ул. Политехническая, 77, к. 414</h2>
+        <br><br>
+        <h2 class="dark">Или же: </h2> <br><br>
+        <!-------------------------->
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Заказать звонок <i class="fa fa-phone" aria-hidden="true"></i></button>
+
+        <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Заказать звонок</h4>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="usr">Как к вам обращаться?</label>
+                  <input type="text" class="form-control" id="usr">
+                </div>
+                <div class="form-group">
+                  <label for="usr">Ваш номер телефона:</label>
+                  <input type="text" class="form-control" id="usr" type="tel">
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Отправить</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-------------------------->
       </div>
     </div>
 
